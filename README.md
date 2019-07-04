@@ -16,3 +16,14 @@ Made on Python 3.5 and PyQt 5.6
 6. Open a commandline and run `pyuic5 -x calculator_design.ui -o calculator_design.py` (replace calculator_design with your filename). You should now have a .py file
 7. You can now start following [the steps to build a calculator](https://github.com/ric2b/Qt-Calculator/commits/master), from the 3rd commit (*Basic code to show the gui*) onwards :)
 8. If you have any feedback or things you'd like to see improved, feel free to [leave an issue](https://github.com/ric2b/Qt-Calculator/issues)! :)
+
+#Notice(注意)
+1.也许你存在如下问题：
+    from PyQt5 import QtCore, QtGui, QtWidgets ImportError: DLL load failed: 找不到指定的模块。
+  多方查找资料，有以下办法有效：
+  
+  原因描述：通过Anaconda 安装的Python缺少了python3.dll
+
+  解决方法（针对anaconda3）：python3的可以直接通过如下链接下载python3.dll，然后放到Anaconda中python35.dll（your python version）所在目录中
+  
+  python3.dll 下载链接: https://pan.baidu.com/s/1hNpsCOQWPx8QhUQCLtfg4A 提取码: m1p9 
